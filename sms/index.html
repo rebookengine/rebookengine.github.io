@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title>Rebook Engine · SMS</title>
+  <link rel="stylesheet" href="sms.css">
+  <script src="sms.js"></script>
+</head>
+<body>
+  <main>
+    <p class="brand">Rebook Engine</p>
+    <h1 id="title">…</h1>
+    <section id="card">
+      <a id="open" class="btn primary" href="#">Open Messages</a>
+      <div class="field">
+        <span class="label" id="lbl-to">To</span>
+        <div class="row"><strong id="to"></strong><button id="copy-num" class="btn small" type="button">Copy number</button></div>
+      </div>
+      <div class="field">
+        <span class="label" id="lbl-msg">Message</span>
+        <p id="msg" class="msg"></p>
+        <button id="copy-msg" class="btn" type="button">Copy message</button>
+      </div>
+      <p id="help" class="muted"></p>
+    </section>
+    <p id="privacy" class="muted small-text"></p>
+  </main>
+</body>
+</html>
